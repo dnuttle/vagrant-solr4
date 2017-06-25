@@ -9,7 +9,7 @@
 #end
 
 Vagrant.configure(2) do |config|
-  config.vm.box = "precise64"
+  config.vm.box = "ubuntu/precise64"
 
   config.vm.network :private_network, ip: "192.168.3.101"
   config.vm.network :forwarded_port, host:8984, guest:8983
